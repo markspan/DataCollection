@@ -1,0 +1,144 @@
+---
+title: "Data Collection and Analysis for the Cognitive Neurosciences *(PSMCV-2)*"
+author:
+  - name: Olaf Dimigen
+    affiliations:
+      - id: id1
+        name: Department of Experimental Psychology
+
+  - name: Mark M. Span
+    affiliations:
+        name: ACN Applied Cognitive Neuroscience Master
+---
+
+# Course Information
+
+[Link to Schedule](https://rooster.rug.nl/#/en/2025-2026/schedule/course-PSMCV-2/timeRange=all)
+
+## Course Syllabus
+
+**PSMCV-2: Data Collection and Analysis for Cognitive Neuroscience, 2025-2026-1a**
+
+Second updated version, 25. October 2024
+
+-   Coordinator: Mark Span ([m.m.span\@rug.nl](mailto:m.m.span@rug.nl))\]
+-   Instructors: Mark Span; Olaf Dimigen
+-   Guest lecturers: Sebastiaan Mathôt, Ana Vilotijeviç
+
+### Course Description
+
+In this course, you will learn how to design, program, and conduct a psychophysical experiment; and you will learn how to analyse the data sets. Students will participate in a pupil dilation experiment of which the data will be analysed in class. Techniques required to analyse this type of data (e.g., processing of markers and selection of analysis windows) are learned. For this, the programming language “Python” will be used. Students will, in groups, build their own pupil dilation experiment using “OpenSesame” and will collect data. Assessment will consist of assignments, and the report written about the experiment and data analysis. The report will take the form of a short journal paper, and a more extensive report of the data analyses.
+
+After taking this hands-on course, students:
+
+-   are able to design and implement a psychophysiological experiment in which pupil dilation and eye movements are recorded
+-   can use tools to analyse and present data collected in such experiments. 
+
+### Course Outline
+
+The first goal of the course is to explore literature for a pupillometry study that you find interesting. You will aim to replicate the experimental findings of this study: either an exact replication or a replication with a small adaptation to the design (e.g., change stimulus modality). In the ideal scenario, you will collect and analyse your own data in week 40 and 41 (see Course Outline below).
+
+You will work together in groups that you form in the first meetings. Although you will work in groups, you are expected to submit the assignments individually (except for Assignment 1 and 6). 
+
+This is a “hands-on” course and therefore most of our meetings take the form of a practicum. The required theoretical knowledge for the practicums is discussed in the form of lectures. Generally, our Wednesday meetings will be theoretically oriented and our Friday meetings practically oriented. Below the course planning is outlined:
+
+| **Wk.** | **Day** | **Lecture** | **To do *before* lecture** | **To do *during* lecture** |
+|------|-----:|------------------|--------------------|--------------------|
+| 37 | 9 Sep  | Practicalities & How to build an experiment in OpenSesame **(Mark Span)** | Read papers / Install OpenSesame / Do the tutorial OpenSesame | Form groups, ask questions |
+|    | 11 Sep | Introduction to pupillometry (**Sebastiaan Mathot**) | \- | Form groups-Introduction |
+| 38 | 16 Sep | How to build an experiment in OpenSesame, reprise **(Mark Span)** | Submit Assignment 0 | Pitch & choose experiment Assignment 1: Design & build experiment |
+|    | 18 Sep | Practicum & Eyelink intro | \- | Assignment 1: Build & test experiment |
+| 39 | 23 Sep | Introduction to Python **(Mark Span)** | \- |  |
+|    | 25 Sep | Pupillometry & the Eyelink | Submit Assignment 1 | Finalize experiment |
+| 40 | 30 Sep | Time Series Data (**Olaf Dimigen**) | \- | Data collection & Assignment 3: Preprocessing |
+|    | 2 Oct  | Preprocessing pupil data (**Ana Vilotijeviç**) | Submit Prepregistration | Data collection & Assignment 3: Preprocessing |
+| 41 | 7 Oct  | Analyse pupil data (**Ana Vilotijeviç**) | \- | Data collection & Assignment 4: Analysis |
+|    | 9 Oct  | Practicum (no lecture) | Submit Assignment 3 | Data collection & Assignment 4: Analysis |
+| 42 | 14 Oct | Statistical analyses | Submit Assignment 4 | Analyse your own data |
+|    | 16 Oct | Practicum (no lecture) | \- | Analyse your own data |
+| 43 | 21 Oct | Practicum (no lecture) | \- | Analyse your own data |
+|    | 23 Oct | Assignment 5: presentations (no lecture) | Submit Assignment 6a | \- |
+| 44 | \-     | \- | Submit Assignment 6b | \- |
+| 45 | 9 Nov  | \- | Submit Final Paper | \- |
+
+: Course Outline
+
+(\*) Lab M226 is blocked for you from Monday 30.9. to Monday 14.10 of October, all day.
+
+| Due date | Task | Grading |
+|----------------|-------------------------------|-------------------------|
+| 11 Sep - 09:00 | *Assignment 0:* Submit (written) experimental proposal | No grade; individual submission is required |
+| 23 Sep - 09:00 | *Assignment 1:* Upload experiment | Graded as group assignment |
+| 11 Oct - 09:00 | *Assignment 3:* Preprocessing assignment | Graded as individual assignment |
+| 14 Oct - 09:00 | *Assignment 4:* Analyses assignment | Graded as individual assignment |
+| 25 Oct | *Assignment 5:* Presentation | Graded as group assignment |
+|  | *Assignment 6:* Peer review | No grade; submission is required |
+| 29 Oct, 18:00 | Send out draft for peer review |  |
+| 1 Nov, 18:00 | Return peer review by Oct |  |
+| 11 Nov | Final Paper | Graded as individual assignment |
+
+: Due dates for assignments
+
+### Grading
+
+Assignments *3*, *4* and *5* will be graded *0 - 4*. The final paper will be graded *1 - 10*. The final grade for the course is calculated as follows:
+
+Final grade = 0.2 \* mean(Assignments \* 2.5) + (0.8 \* paper).
+
+Students will only receive a final grade upon submission of all assignments.
+
+### Final Paper
+
+The final paper consists of: 
+
+-   **“Abstract”** containing main points from introduction and discussion (max. 180 words)
+
+-   **Methods & Results** (also mention if or where your analysis deviated from your pre-registration
+
+# Simple software Install instructions:
+
+*Please install the software before the first meeting: if something goes wrong, we can help you after the meeting.*
+
+We use **Google *Colab*** as a programming environment for this course. Google Colab is a free, cloud-based platform for writing and running Python code in a browser, often used for programming, data analysis, and machine learning without needing local setup. Please try if you can login before the first meetings:
+
+[Google Colab](https://colab.research.google.com/)
+
+You can find OpenSesame here:
+
+<https://osdoc.cogsci.nl/4.0/download/>
+
+If you’re on Windows, just download the Windows installer (.exe), and if you’re on a Mac, download the Mac installer (.dmg). There’s more information on the page, but you can ignore that.
+
+The installation usually goes smoothly, but occasionally there might be issues. If you run into any problems, we can take a look at it together during class on Monday, and we’ll likely figure it out.
+
+# Literature
+
+*Please read this before the first lecture*
+
+[📄 Husta et al](Literature/Husta%202019.pdf "Full Article")\
+[📄 Regnath et al](Literature/Regnath%202020.pdf "Full Article")
+
+# Week 1
+
+## Presentations
+
+[📄 Presentation Mathot](Presentations/tuning%20the%20senses.pdf)\
+[📄 Practical Introduction](Presentations/2025_w1_practical_intro-New.pptx)\
+[📄 Building Experiments](Presentations/2025_s1_building_experiment.pptx)
+
+# Week 2
+
+## Demo Experiment
+
+[📄 Demo Experiment](Demo%20Experiment/demo_exp_2023_vMS.osexp)\
+[📄 Preregistration](Presentations/DCAC_Preregistration_2025.pdf)\
+
+# Week 3
+
+# Week 4
+
+# Week 5
+
+# Week 6
+
+# Week 7

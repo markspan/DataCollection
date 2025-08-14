@@ -1,0 +1,23 @@
+project:
+  type: website
+
+website:
+  title: "DCAC"
+  navbar:
+    left:
+      - about.qmd
+
+format:
+  html:
+    theme:
+      - Cerulean
+    toc: true
+
+editor: visual
+
+resources:
+  - Literature/*.pdf
+  - Presentations/*.pdf
+  - Presentations/*.pptx
+  - Demo\ Experiment/*.osexp
+  
