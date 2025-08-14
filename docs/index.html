@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Olaf Dimigen">
+<meta name="author" content="Mark M. Span">
+
+<title>Data Collection and Analysis for the Cognitive Neurosciences (PSMCV-2) – PSMVC-2</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-72b10730c1ee6527289f76fc36b831bd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">PSMVC-2</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#course-information" id="toc-course-information" class="nav-link active" data-scroll-target="#course-information">Course Information</a>
+  <ul class="collapse">
+  <li><a href="#course-syllabus" id="toc-course-syllabus" class="nav-link" data-scroll-target="#course-syllabus">Course Syllabus</a>
+  <ul class="collapse">
+  <li><a href="#course-description" id="toc-course-description" class="nav-link" data-scroll-target="#course-description">Course Description</a></li>
+  <li><a href="#course-outline" id="toc-course-outline" class="nav-link" data-scroll-target="#course-outline">Course Outline</a></li>
+  <li><a href="#grading" id="toc-grading" class="nav-link" data-scroll-target="#grading">Grading</a></li>
+  <li><a href="#final-paper" id="toc-final-paper" class="nav-link" data-scroll-target="#final-paper">Final Paper</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#simple-software-install-instructions" id="toc-simple-software-install-instructions" class="nav-link" data-scroll-target="#simple-software-install-instructions">Simple software Install instructions:</a></li>
+  <li><a href="#literature" id="toc-literature" class="nav-link" data-scroll-target="#literature">Literature</a></li>
+  <li><a href="#week-1" id="toc-week-1" class="nav-link" data-scroll-target="#week-1">Week 1</a>
+  <ul class="collapse">
+  <li><a href="#presentations" id="toc-presentations" class="nav-link" data-scroll-target="#presentations">Presentations</a></li>
+  </ul></li>
+  <li><a href="#week-2" id="toc-week-2" class="nav-link" data-scroll-target="#week-2">Week 2</a>
+  <ul class="collapse">
+  <li><a href="#demo-experiment" id="toc-demo-experiment" class="nav-link" data-scroll-target="#demo-experiment">Demo Experiment</a></li>
+  </ul></li>
+  <li><a href="#week-3" id="toc-week-3" class="nav-link" data-scroll-target="#week-3">Week 3</a></li>
+  <li><a href="#week-4" id="toc-week-4" class="nav-link" data-scroll-target="#week-4">Week 4</a></li>
+  <li><a href="#week-5" id="toc-week-5" class="nav-link" data-scroll-target="#week-5">Week 5</a></li>
+  <li><a href="#week-6" id="toc-week-6" class="nav-link" data-scroll-target="#week-6">Week 6</a></li>
+  <li><a href="#week-7" id="toc-week-7" class="nav-link" data-scroll-target="#week-7">Week 7</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Data Collection and Analysis for the Cognitive Neurosciences <em>(PSMCV-2)</em></h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Olaf Dimigen </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Department of Experimental Psychology
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Mark M. Span </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            ACN Applied Cognitive Neuroscience Master
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="course-information" class="level1">
+<h1>Course Information</h1>
+<p><a href="https://rooster.rug.nl/#/en/2025-2026/schedule/course-PSMCV-2/timeRange=all">Link to Schedule</a></p>
+<section id="course-syllabus" class="level2">
+<h2 class="anchored" data-anchor-id="course-syllabus">Course Syllabus</h2>
+<p><strong>PSMCV-2: Data Collection and Analysis for Cognitive Neuroscience, 2025-2026-1a</strong></p>
+<p>Second updated version, 25. October 2024</p>
+<ul>
+<li>Coordinator: Mark Span (<a href="mailto:m.m.span@rug.nl">m.m.span@rug.nl</a>)]</li>
+<li>Instructors: Mark Span; Olaf Dimigen</li>
+<li>Guest lecturers: Sebastiaan Mathôt, Ana Vilotijeviç</li>
+</ul>
+<section id="course-description" class="level3">
+<h3 class="anchored" data-anchor-id="course-description">Course Description</h3>
+<p>In this course, you will learn how to design, program, and conduct a psychophysical experiment; and you will learn how to analyse the data sets. Students will participate in a pupil dilation experiment of which the data will be analysed in class. Techniques required to analyse this type of data (e.g., processing of markers and selection of analysis windows) are learned. For this, the programming language “Python” will be used. Students will, in groups, build their own pupil dilation experiment using “OpenSesame” and will collect data. Assessment will consist of assignments, and the report written about the experiment and data analysis. The report will take the form of a short journal paper, and a more extensive report of the data analyses.</p>
+<p>After taking this hands-on course, students:</p>
+<ul>
+<li>are able to design and implement a psychophysiological experiment in which pupil dilation and eye movements are recorded</li>
+<li>can use tools to analyse and present data collected in such experiments.&nbsp;</li>
+</ul>
+</section>
+<section id="course-outline" class="level3">
+<h3 class="anchored" data-anchor-id="course-outline">Course Outline</h3>
+<p>The first goal of the course is to explore literature for a pupillometry study that you find interesting. You will aim to replicate the experimental findings of this study: either an exact replication or a replication with a small adaptation to the design (e.g., change stimulus modality). In the ideal scenario, you will collect and analyse your own data in week 40 and 41 (see Course Outline below).</p>
+<p>You will work together in groups that you form in the first meetings. Although you will work in groups, you are expected to submit the assignments individually (except for Assignment 1 and&nbsp;6).&nbsp;</p>
+<p>This is a “hands-on” course and therefore most of our meetings take the form of a practicum. The required theoretical knowledge for the practicums is discussed in the form of lectures. Generally, our Wednesday meetings will be theoretically oriented and our Friday meetings practically oriented. Below the course planning is outlined:</p>
+<table class="caption-top table">
+<caption>Course Outline</caption>
+<colgroup>
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 25%">
+<col style="width: 28%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Wk.</strong></th>
+<th style="text-align: right;"><strong>Day</strong></th>
+<th><strong>Lecture</strong></th>
+<th><strong>To do <em>before</em> lecture</strong></th>
+<th><strong>To do <em>during</em> lecture</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>37</td>
+<td style="text-align: right;">9 Sep</td>
+<td>Practicalities &amp; How to build an experiment in OpenSesame <strong>(Mark Span)</strong></td>
+<td>Read papers / Install OpenSesame / Do the tutorial OpenSesame</td>
+<td>Form groups, ask questions</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: right;">11 Sep</td>
+<td>Introduction to pupillometry (<strong>Sebastiaan Mathot</strong>)</td>
+<td>-</td>
+<td>Form groups-Introduction</td>
+</tr>
+<tr class="odd">
+<td>38</td>
+<td style="text-align: right;">16 Sep</td>
+<td>How to build an experiment in OpenSesame, reprise <strong>(Mark Span)</strong></td>
+<td>Submit Assignment 0</td>
+<td>Pitch &amp; choose experiment Assignment 1: Design &amp; build experiment</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: right;">18 Sep</td>
+<td>Practicum &amp; Eyelink intro</td>
+<td>-</td>
+<td>Assignment 1: Build &amp; test experiment</td>
+</tr>
+<tr class="odd">
+<td>39</td>
+<td style="text-align: right;">23 Sep</td>
+<td>Introduction to Python <strong>(Mark Span)</strong></td>
+<td>-</td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: right;">25 Sep</td>
+<td>Pupillometry &amp; the Eyelink</td>
+<td>Submit Assignment 1</td>
+<td>Finalize experiment</td>
+</tr>
+<tr class="odd">
+<td>40</td>
+<td style="text-align: right;">30 Sep</td>
+<td>Time Series Data (<strong>Olaf Dimigen</strong>)</td>
+<td>-</td>
+<td>Data collection &amp; Assignment 3: Preprocessing</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: right;">2 Oct</td>
+<td>Preprocessing pupil data (<strong>Ana Vilotijeviç</strong>)</td>
+<td>Submit Prepregistration</td>
+<td>Data collection &amp; Assignment 3: Preprocessing</td>
+</tr>
+<tr class="odd">
+<td>41</td>
+<td style="text-align: right;">7 Oct</td>
+<td>Analyse pupil data (<strong>Ana Vilotijeviç</strong>)</td>
+<td>-</td>
+<td>Data collection &amp; Assignment 4: Analysis</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: right;">9 Oct</td>
+<td>Practicum (no lecture)</td>
+<td>Submit Assignment 3</td>
+<td>Data collection &amp; Assignment 4: Analysis</td>
+</tr>
+<tr class="odd">
+<td>42</td>
+<td style="text-align: right;">14 Oct</td>
+<td>Statistical analyses</td>
+<td>Submit Assignment 4</td>
+<td>Analyse your own data</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: right;">16 Oct</td>
+<td>Practicum (no lecture)</td>
+<td>-</td>
+<td>Analyse your own data</td>
+</tr>
+<tr class="odd">
+<td>43</td>
+<td style="text-align: right;">21 Oct</td>
+<td>Practicum (no lecture)</td>
+<td>-</td>
+<td>Analyse your own data</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: right;">23 Oct</td>
+<td>Assignment 5: presentations (no lecture)</td>
+<td>Submit Assignment 6a</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td>44</td>
+<td style="text-align: right;">-</td>
+<td>-</td>
+<td>Submit Assignment 6b</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>45</td>
+<td style="text-align: right;">9 Nov</td>
+<td>-</td>
+<td>Submit Final Paper</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p>(*) Lab M226 is blocked for you from Monday 30.9. to Monday 14.10 of October, all day.</p>
+<table class="caption-top table">
+<caption>Due dates for assignments</caption>
+<colgroup>
+<col style="width: 22%">
+<col style="width: 43%">
+<col style="width: 34%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Due date</th>
+<th>Task</th>
+<th>Grading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>11 Sep - 09:00</td>
+<td><em>Assignment 0:</em> Submit (written) experimental proposal</td>
+<td>No grade; individual submission is required</td>
+</tr>
+<tr class="even">
+<td>23 Sep - 09:00</td>
+<td><em>Assignment 1:</em> Upload experiment</td>
+<td>Graded as group assignment</td>
+</tr>
+<tr class="odd">
+<td>11 Oct - 09:00</td>
+<td><em>Assignment 3:</em> Preprocessing assignment</td>
+<td>Graded as individual assignment</td>
+</tr>
+<tr class="even">
+<td>14 Oct - 09:00</td>
+<td><em>Assignment 4:</em> Analyses assignment</td>
+<td>Graded as individual assignment</td>
+</tr>
+<tr class="odd">
+<td>25 Oct</td>
+<td><em>Assignment 5:</em> Presentation</td>
+<td>Graded as group assignment</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><em>Assignment 6:</em> Peer review</td>
+<td>No grade; submission is required</td>
+</tr>
+<tr class="odd">
+<td>29 Oct, 18:00</td>
+<td>Send out draft for peer review</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>1 Nov, 18:00</td>
+<td>Return peer review by Oct</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>11 Nov</td>
+<td>Final Paper</td>
+<td>Graded as individual assignment</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="grading" class="level3">
+<h3 class="anchored" data-anchor-id="grading">Grading</h3>
+<p>Assignments <em>3</em>, <em>4</em> and <em>5</em> will be graded <em>0 - 4</em>. The final paper will be graded <em>1 - 10</em>. The final grade for the course is calculated as follows:</p>
+<p>Final grade = 0.2 * mean(Assignments * 2.5) + (0.8 * paper).</p>
+<p>Students will only receive a final grade upon submission of all assignments.</p>
+</section>
+<section id="final-paper" class="level3">
+<h3 class="anchored" data-anchor-id="final-paper">Final Paper</h3>
+<p>The final paper consists of:&nbsp;</p>
+<ul>
+<li><p><strong>“Abstract”</strong> containing main points from introduction and discussion (max. 180 words)</p></li>
+<li><p><strong>Methods &amp; Results</strong> (also mention if or where your analysis deviated from your pre-registration</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="simple-software-install-instructions" class="level1">
+<h1>Simple software Install instructions:</h1>
+<p><em>Please install the software before the first meeting: if something goes wrong, we can help you after the meeting.</em></p>
+<p>We use <strong>Google <em>Colab</em></strong> as a programming environment for this course. Google Colab is a free, cloud-based platform for writing and running Python code in a browser, often used for programming, data analysis, and machine learning without needing local setup. Please try if you can login before the first meetings:</p>
+<p><a href="https://colab.research.google.com/">Google Colab</a></p>
+<p>You can find OpenSesame here:</p>
+<p><a href="https://osdoc.cogsci.nl/4.0/download/" class="uri">https://osdoc.cogsci.nl/4.0/download/</a></p>
+<p>If you’re on Windows, just download the Windows installer (.exe), and if you’re on a Mac, download the Mac installer (.dmg). There’s more information on the page, but you can ignore that.</p>
+<p>The installation usually goes smoothly, but occasionally there might be issues. If you run into any problems, we can take a look at it together during class on Monday, and we’ll likely figure it out.</p>
+</section>
+<section id="literature" class="level1">
+<h1>Literature</h1>
+<p><em>Please read this before the first lecture</em></p>
+<p><a href="Literature/Husta 2019.pdf" title="Full Article">📄 Husta et al</a><br>
+<a href="Literature/Regnath 2020.pdf" title="Full Article">📄 Regnath et al</a></p>
+</section>
+<section id="week-1" class="level1">
+<h1>Week 1</h1>
+<section id="presentations" class="level2">
+<h2 class="anchored" data-anchor-id="presentations">Presentations</h2>
+<p><a href="Presentations/tuning the senses.pdf">📄 Presentation Mathot</a><br>
+<a href="Presentations/2025_w1_practical_intro-New.pptx">📄 Practical Introduction</a><br>
+<a href="Presentations/2025_s1_building_experiment.pptx">📄 Building Experiments</a></p>
+</section>
+</section>
+<section id="week-2" class="level1">
+<h1>Week 2</h1>
+<section id="demo-experiment" class="level2">
+<h2 class="anchored" data-anchor-id="demo-experiment">Demo Experiment</h2>
+<p><a href="Demo Experiment/demo_exp_2023_vMS.osexp">📄 Demo Experiment</a><br>
+<a href="Presentations/DCAC_Preregistration_2025.pdf">📄 Preregistration</a><br>
+</p>
+</section>
+</section>
+<section id="week-3" class="level1">
+<h1>Week 3</h1>
+</section>
+<section id="week-4" class="level1">
+<h1>Week 4</h1>
+</section>
+<section id="week-5" class="level1">
+<h1>Week 5</h1>
+</section>
+<section id="week-6" class="level1">
+<h1>Week 6</h1>
+</section>
+<section id="week-7" class="level1">
+<h1>Week 7</h1>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
