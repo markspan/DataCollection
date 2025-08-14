@@ -1,8 +1,9 @@
 project:
   type: website
-
+  output-dir: docs
+  
 website:
-  title: "DCAC"
+  title: "PSMVC-2"
   navbar:
     left:
       - about.qmd
