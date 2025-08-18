@@ -44,22 +44,7 @@ You will work together in groups that you form in the first meetings. Although y
 This is a “hands-on” course and therefore most of our meetings take the form of a practicum. The required theoretical knowledge for the practicums is discussed in the form of lectures. Generally, our Wednesday meetings will be theoretically oriented and our Friday meetings practically oriented. Below the course planning is outlined:
 
 
-<style>
-  .outline_table {
-    width: 100%;
-    table-layout: fixed;
-  }
-  .outline_table th:nth-child(1) { width: 3%; }
-  .outline_table th:nth-child(2) { width: 10%; }
-  .outline_table th:nth-child(3) { width: 36%; }
-  .outline_table th:nth-child(4) { width: 26%; }
-  .outline_table th:nth-child(5) { width: 25%; }
-  .outline_table.table-striped tbody tr:nth-of-type(odd) {
-    background-color: rgba(0, 0, 0, 0.05);
-  }
-</style>
-
-|**Wk.**|**Day**| **Lecture**                                                             | **To do *before* lecture** | **To do *during* lecture** |
+|Wk.|Day| Lecture                                                             | To do *before* lecture | To do *during* lecture |
 |-|---:|------------|----------|------------|
 | 37 | 9 Sep  | Practicalities & How to build an experiment in OpenSesame <br/>**(Mark Span)** | Read papers / Install OpenSesame / Do the tutorial OpenSesame | Form groups, ask questions |
 |    | 11 Sep | Introduction to pupillometry <br/>**(Sebastiaan Mathot)**                 |                         | Form groups-Introduction |
@@ -78,36 +63,24 @@ This is a “hands-on” course and therefore most of our meetings take the form
 | 44 |        |                                                                           | Submit Assignment 6b    |  |
 | 45 | 9 Nov  |                                                                           | Submit Final Paper      |  |
 : Course Outline
-{.outline_table .table-striped}
+{.table-primary .table-striped}
 
 (\*) Lab M226 is blocked for you from Monday 30.9. to Monday 14.10 of October, all day.
 
 
-<style>
-  .assignment_table {
-    width: 100%;
-    table-layout: fixed;
-  }
-  .assignment_table th:nth-child(1) { width: 10%; }
-  .assignment_table th:nth-child(2) { width: 45%; }
-  .assignment_table th:nth-child(3) { width: 45%; }
-  .assignment_table.table-striped tbody tr:nth-of-type(odd) {
-    background-color: rgba(0, 0, 0, 0.05);
-  }
-</style>
-| Due date | Task | Grading |
-|----------------:|-------------------------------|-------------------------|
-| 11 Sep - 09:00 | *Assignment 0:* Submit (written) experimental proposal | No grade; individual submission is required |
-| 23 Sep - 09:00 | *Assignment 1:* Upload experiment | Graded as group assignment |
-| 11 Oct - 09:00 | *Assignment 3:* Preprocessing assignment | Graded as individual assignment |
-| 14 Oct - 09:00 | *Assignment 4:* Analyses assignment | Graded as individual assignment |
-| 25 Oct         | *Assignment 5:* Presentation | Graded as group assignment |
-|                | *Assignment 6:* Peer review | No grade; submission is required |
-| 29 Oct, 18:00  | Send out draft for peer review |  |
-| 1 Nov, 18:00   | Return peer review by Oct |  |
-| 11 Nov         | Final Paper | Graded as individual assignment |
+| Wk. | Due date | Task | Grading |
+|-|-----:|-------------|----------------|
+|37| 11 Sep - 09:00 | *Assignment 0:* Submit (written) experimental proposal | No grade; individual submission is required |
+|39| 23 Sep - 09:00 | *Assignment 1:* Upload experiment | Graded as group assignment |
+|41| 09 Oct - 09:00 | *Assignment 3:* Preprocessing assignment | Graded as individual assignment |
+|42| 14 Oct - 09:00 | *Assignment 4:* Analyses assignment | Graded as individual assignment |
+|43| 23 Oct         | *Assignment 5:* Presentation | Graded as group assignment |
+|43|                | *Assignment 6:* Peer review | No grade; submission is required |
+|44| 29 Oct, 18:00  | Send out draft for peer review |  |
+|44| 1 Nov, 18:00   | Return peer review by Oct |  |
+|45| 11 Nov         | Final Paper | Graded as individual assignment |
 : Due dates for assignments
-{.assignment_table .table-striped}
+{.table-primary .table-striped}
 
 ### Grading
 
