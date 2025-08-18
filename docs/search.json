@@ -32,6 +32,6 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "About this site\n\nlibrary(ggplot2)\n\nggplot(mtcars, aes(x = wt, y = mpg)) +\n  stat_density_2d(aes(fill = ..level..), geom = \"polygon\", color = \"white\") +\n  scale_fill_viridis_c() + \n  labs(title = \"Data Collection Course\",\n       x = \"Olaf\",\n       y = \"Mark\",\n       fill = \"Knowledge\") +\n  theme_minimal()\n\nWarning: The dot-dot notation (`..level..`) was deprecated in ggplot2 3.4.0.\nℹ Please use `after_stat(level)` instead."
   }
 ]
