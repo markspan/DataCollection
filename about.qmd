@@ -1,20 +1,56 @@
 ---
 title: "About"
+format: 
+  html:
+    include-in-header: 
+      - text: |
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
 ---
 
 About this course
 
-```{r}
-#| echo: false
-#| warning: false
-library(ggplot2)
+```{=html}
+<div id="wolfram-sketch"></div>
+<script>
+new p5((p) => {
+  let n = 10000;
+  let x = [];
+  let y = [];
 
-ggplot(mtcars, aes(x = wt, y = mpg)) +
-  stat_density_2d(aes(fill = ..level..), geom = "polygon", color = "white") +
-  scale_fill_viridis_c() + 
-  labs(title = "Data Collection Course",
-       x = "Olaf",
-       y = "Mark",
-       fill = "Knowledge") +
-  theme_minimal()
-```
+  let t = 0;
+  let dt = 0.02;
+
+  p.setup = () => {
+    let canvas = p.createCanvas(400, 400);
+    canvas.parent("wolfram-sketch");
+    for (let i = 0; i < n; i++) {
+      x[i] = i + 1;
+      y[i] = x[i] / 235.0;
+    }
+    p.stroke(0, 165);
+    p.strokeWeight(1);
+    p.background(255);
+  };
+
+  p.draw = () => {
+    p.background(255);
+    for (let i = 0; i < n; i++) {
+      let k = (4 + 3 * p.sin(2 * y[i] - t)) * p.cos(x[i] / 29.0);
+      let e = y[i] / 8.0 - 13.0;
+      let d = p.sqrt(k * k + e * e);
+      let c = d - t;
+
+      let q = 3 * p.sin(2 * k) 
+            + 0.3 / k 
+            + p.sin(y[i] / 25.0) * k * (9 + 4 * p.sin(9 * e - 3 * d + 2 * t));
+
+      let px = q + 30 * p.cos(c) + 200;
+      let py = 400 - (q * p.sin(c) + 39 * d - 220);
+
+      p.point(px, py);
+    }
+    t += dt;
+    if (t > p.TWO_PI) t = 0;
+  };
+});
+</script>
