@@ -11,6 +11,7 @@ author:
         name: ACN Applied Cognitive Neuroscience Master
 ---
 
+
 # Course Information
 
 [Link to Schedule](https://rooster.rug.nl/#/en/2025-2026/schedule/course-PSMCV-2/timeRange=all)
@@ -36,48 +37,77 @@ After taking this hands-on course, students:
 
 ### Course Outline
 
-The first goal of the course is to explore literature for a pupillometry study that you find interesting. You will aim to replicate the experimental findings of this study: either an exact replication or a replication with a small adaptation to the design (e.g., change stimulus modality). In the ideal scenario, you will collect and analyse your own data in week 40 and 41 (see Course Outline below).
+The first goal of the course is to explore literature for a pupillometry study that you find interesting. You will aim to replicate the experimental findings of this study: either an exact replication or a replication with a small adaptation to the design (e.g., change stimulus modality). In the ideal scenario, you will collect and analyse your own data in week 40 upto 43 (see Course Outline below).
 
-You will work together in groups that you form in the first meetings. Although you will work in groups, you are expected to submit the assignments individually (except for Assignment 1 and 6). 
+You will work together in groups that you form in the first meetings. Although you will work in groups, you are expected to submit the assignments individually (except for Assignment 1 and 5). 
 
 This is a “hands-on” course and therefore most of our meetings take the form of a practicum. The required theoretical knowledge for the practicums is discussed in the form of lectures. Generally, our Wednesday meetings will be theoretically oriented and our Friday meetings practically oriented. Below the course planning is outlined:
 
-| **Wk.** | **Day** | **Lecture** | **To do *before* lecture** | **To do *during* lecture** |
-|------|-----:|------------------|--------------------|--------------------|
-| 37 | 9 Sep  | Practicalities & How to build an experiment in OpenSesame **(Mark Span)** | Read papers / Install OpenSesame / Do the tutorial OpenSesame | Form groups, ask questions |
-|    | 11 Sep | Introduction to pupillometry (**Sebastiaan Mathot**) | \- | Form groups-Introduction |
-| 38 | 16 Sep | How to build an experiment in OpenSesame, reprise **(Mark Span)** | Submit Assignment 0 | Pitch & choose experiment Assignment 1: Design & build experiment |
-|    | 18 Sep | Practicum & Eyelink intro | \- | Assignment 1: Build & test experiment |
-| 39 | 23 Sep | Introduction to Python **(Mark Span)** | \- |  |
-|    | 25 Sep | Pupillometry & the Eyelink | Submit Assignment 1 | Finalize experiment |
-| 40 | 30 Sep | Time Series Data (**Olaf Dimigen**) | \- | Data collection & Assignment 3: Preprocessing |
-|    | 2 Oct  | Preprocessing pupil data (**Ana Vilotijeviç**) | Submit Prepregistration | Data collection & Assignment 3: Preprocessing |
-| 41 | 7 Oct  | Analyse pupil data (**Ana Vilotijeviç**) | \- | Data collection & Assignment 4: Analysis |
-|    | 9 Oct  | Practicum (no lecture) | Submit Assignment 3 | Data collection & Assignment 4: Analysis |
-| 42 | 14 Oct | Statistical analyses | Submit Assignment 4 | Analyse your own data |
-|    | 16 Oct | Practicum (no lecture) | \- | Analyse your own data |
-| 43 | 21 Oct | Practicum (no lecture) | \- | Analyse your own data |
-|    | 23 Oct | Assignment 5: presentations (no lecture) | Submit Assignment 6a | \- |
-| 44 | \-     | \- | Submit Assignment 6b | \- |
-| 45 | 9 Nov  | \- | Submit Final Paper | \- |
 
+<style>
+  .outline_table {
+    width: 100%;
+    table-layout: fixed;
+  }
+  .outline_table th:nth-child(1) { width: 3%; }
+  .outline_table th:nth-child(2) { width: 10%; }
+  .outline_table th:nth-child(3) { width: 36%; }
+  .outline_table th:nth-child(4) { width: 26%; }
+  .outline_table th:nth-child(5) { width: 25%; }
+  .outline_table.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+</style>
+
+|**Wk.**|**Day**| **Lecture**                                                             | **To do *before* lecture** | **To do *during* lecture** |
+|-|---:|------------|----------|------------|
+| 37 | 9 Sep  | Practicalities & How to build an experiment in OpenSesame <br/>**(Mark Span)** | Read papers / Install OpenSesame / Do the tutorial OpenSesame | Form groups, ask questions |
+|    | 11 Sep | Introduction to pupillometry <br/>**(Sebastiaan Mathot)**                 |                         | Form groups-Introduction |
+| 38 | 16 Sep | How to build an experiment in OpenSesame, reprise <br/> **(Mark Span)**   | Submit Assignment 0     | Pitch & choose experiment Assignment 1: Design & build experiment |
+|    | 18 Sep | Practicum & Eyelink intro                                                 |                         |  Assignment 1: Build & test experiment |
+| 39 | 23 Sep | Introduction to Python <br/>**(Mark Span)**                               |                         | |
+|    | 25 Sep | Pupillometry & the Eyelink                                                | Submit Assignment 1     | Finalize experiment |
+| 40 | 30 Sep | Time Series Data <br/> (**Olaf Dimigen**)                                 |                         | Data collection & Assignment 3: Preprocessing |
+|    | 2 Oct  | Preprocessing pupil data <br/>(**Ana Vilotijeviç**)                       | Submit Prepregistration | Data collection & Assignment 3: Preprocessing |
+| 41 | 7 Oct  | Analyse pupil data <br/>(**Ana Vilotijeviç**)                             |                         | Data collection & Assignment 4: Analysis |
+|    | 9 Oct  | Practicum (no lecture)                                                    | Submit Assignment 3     | Data collection & Assignment 4: Analysis |
+| 42 | 14 Oct | Statistical analyses                                                      | Submit Assignment 4     | Analyse your own data |
+|    | 16 Oct | Practicum (no lecture)                                                    |                         | Analyse your own data |
+| 43 | 21 Oct | Practicum (no lecture)                                                    |                         | Analyse your own data |
+|    | 23 Oct | Assignment 5: presentations <br/>(no lecture)                             | Submit Assignment 6a    |  |
+| 44 |        |                                                                           | Submit Assignment 6b    |  |
+| 45 | 9 Nov  |                                                                           | Submit Final Paper      |  |
 : Course Outline
+{.outline_table .table-striped}
 
 (\*) Lab M226 is blocked for you from Monday 30.9. to Monday 14.10 of October, all day.
 
+
+<style>
+  .assignment_table {
+    width: 100%;
+    table-layout: fixed;
+  }
+  .assignment_table th:nth-child(1) { width: 10%; }
+  .assignment_table th:nth-child(2) { width: 45%; }
+  .assignment_table th:nth-child(3) { width: 45%; }
+  .assignment_table.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+</style>
 | Due date | Task | Grading |
-|----------------|-------------------------------|-------------------------|
+|----------------:|-------------------------------|-------------------------|
 | 11 Sep - 09:00 | *Assignment 0:* Submit (written) experimental proposal | No grade; individual submission is required |
 | 23 Sep - 09:00 | *Assignment 1:* Upload experiment | Graded as group assignment |
 | 11 Oct - 09:00 | *Assignment 3:* Preprocessing assignment | Graded as individual assignment |
 | 14 Oct - 09:00 | *Assignment 4:* Analyses assignment | Graded as individual assignment |
-| 25 Oct | *Assignment 5:* Presentation | Graded as group assignment |
-|  | *Assignment 6:* Peer review | No grade; submission is required |
-| 29 Oct, 18:00 | Send out draft for peer review |  |
-| 1 Nov, 18:00 | Return peer review by Oct |  |
-| 11 Nov | Final Paper | Graded as individual assignment |
-
+| 25 Oct         | *Assignment 5:* Presentation | Graded as group assignment |
+|                | *Assignment 6:* Peer review | No grade; submission is required |
+| 29 Oct, 18:00  | Send out draft for peer review |  |
+| 1 Nov, 18:00   | Return peer review by Oct |  |
+| 11 Nov         | Final Paper | Graded as individual assignment |
 : Due dates for assignments
+{.assignment_table .table-striped}
 
 ### Grading
 

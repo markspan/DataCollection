@@ -71,6 +71,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -204,17 +205,31 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="course-outline" class="level3">
 <h3 class="anchored" data-anchor-id="course-outline">Course Outline</h3>
-<p>The first goal of the course is to explore literature for a pupillometry study that you find interesting. You will aim to replicate the experimental findings of this study: either an exact replication or a replication with a small adaptation to the design (e.g., change stimulus modality). In the ideal scenario, you will collect and analyse your own data in week 40 and 41 (see Course Outline below).</p>
-<p>You will work together in groups that you form in the first meetings. Although you will work in groups, you are expected to submit the assignments individually (except for Assignment 1 and&nbsp;6).&nbsp;</p>
+<p>The first goal of the course is to explore literature for a pupillometry study that you find interesting. You will aim to replicate the experimental findings of this study: either an exact replication or a replication with a small adaptation to the design (e.g., change stimulus modality). In the ideal scenario, you will collect and analyse your own data in week 40 upto 43 (see Course Outline below).</p>
+<p>You will work together in groups that you form in the first meetings. Although you will work in groups, you are expected to submit the assignments individually (except for Assignment 1 and 5).</p>
 <p>This is a “hands-on” course and therefore most of our meetings take the form of a practicum. The required theoretical knowledge for the practicums is discussed in the form of lectures. Generally, our Wednesday meetings will be theoretically oriented and our Friday meetings practically oriented. Below the course planning is outlined:</p>
-<table class="caption-top table">
-<caption>Course Outline</caption>
+<style>
+  .outline_table {
+    width: 100%;
+    table-layout: fixed;
+  }
+  .outline_table th:nth-child(1) { width: 3%; }
+  .outline_table th:nth-child(2) { width: 10%; }
+  .outline_table th:nth-child(3) { width: 36%; }
+  .outline_table th:nth-child(4) { width: 26%; }
+  .outline_table th:nth-child(5) { width: 25%; }
+  .outline_table.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+</style>
+<table class="outline_table table-striped caption-top table">
+<caption>Course Outline </caption>
 <colgroup>
-<col style="width: 8%">
-<col style="width: 8%">
+<col style="width: 2%">
+<col style="width: 10%">
+<col style="width: 30%">
 <col style="width: 25%">
-<col style="width: 28%">
-<col style="width: 28%">
+<col style="width: 30%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -229,21 +244,21 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td>37</td>
 <td style="text-align: right;">9 Sep</td>
-<td>Practicalities &amp; How to build an experiment in OpenSesame <strong>(Mark Span)</strong></td>
+<td>Practicalities &amp; How to build an experiment in OpenSesame <br><strong>(Mark Span)</strong></td>
 <td>Read papers / Install OpenSesame / Do the tutorial OpenSesame</td>
 <td>Form groups, ask questions</td>
 </tr>
 <tr class="even">
 <td></td>
 <td style="text-align: right;">11 Sep</td>
-<td>Introduction to pupillometry (<strong>Sebastiaan Mathot</strong>)</td>
-<td>-</td>
+<td>Introduction to pupillometry <br><strong>(Sebastiaan Mathot)</strong></td>
+<td></td>
 <td>Form groups-Introduction</td>
 </tr>
 <tr class="odd">
 <td>38</td>
 <td style="text-align: right;">16 Sep</td>
-<td>How to build an experiment in OpenSesame, reprise <strong>(Mark Span)</strong></td>
+<td>How to build an experiment in OpenSesame, reprise <br> <strong>(Mark Span)</strong></td>
 <td>Submit Assignment 0</td>
 <td>Pitch &amp; choose experiment Assignment 1: Design &amp; build experiment</td>
 </tr>
@@ -251,14 +266,14 @@ ul.task-list li input[type="checkbox"] {
 <td></td>
 <td style="text-align: right;">18 Sep</td>
 <td>Practicum &amp; Eyelink intro</td>
-<td>-</td>
+<td></td>
 <td>Assignment 1: Build &amp; test experiment</td>
 </tr>
 <tr class="odd">
 <td>39</td>
 <td style="text-align: right;">23 Sep</td>
-<td>Introduction to Python <strong>(Mark Span)</strong></td>
-<td>-</td>
+<td>Introduction to Python <br><strong>(Mark Span)</strong></td>
+<td></td>
 <td></td>
 </tr>
 <tr class="even">
@@ -271,22 +286,22 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td>40</td>
 <td style="text-align: right;">30 Sep</td>
-<td>Time Series Data (<strong>Olaf Dimigen</strong>)</td>
-<td>-</td>
+<td>Time Series Data <br> (<strong>Olaf Dimigen</strong>)</td>
+<td></td>
 <td>Data collection &amp; Assignment 3: Preprocessing</td>
 </tr>
 <tr class="even">
 <td></td>
 <td style="text-align: right;">2 Oct</td>
-<td>Preprocessing pupil data (<strong>Ana Vilotijeviç</strong>)</td>
+<td>Preprocessing pupil data <br>(<strong>Ana Vilotijeviç</strong>)</td>
 <td>Submit Prepregistration</td>
 <td>Data collection &amp; Assignment 3: Preprocessing</td>
 </tr>
 <tr class="odd">
 <td>41</td>
 <td style="text-align: right;">7 Oct</td>
-<td>Analyse pupil data (<strong>Ana Vilotijeviç</strong>)</td>
-<td>-</td>
+<td>Analyse pupil data <br>(<strong>Ana Vilotijeviç</strong>)</td>
+<td></td>
 <td>Data collection &amp; Assignment 4: Analysis</td>
 </tr>
 <tr class="even">
@@ -307,97 +322,109 @@ ul.task-list li input[type="checkbox"] {
 <td></td>
 <td style="text-align: right;">16 Oct</td>
 <td>Practicum (no lecture)</td>
-<td>-</td>
+<td></td>
 <td>Analyse your own data</td>
 </tr>
 <tr class="odd">
 <td>43</td>
 <td style="text-align: right;">21 Oct</td>
 <td>Practicum (no lecture)</td>
-<td>-</td>
+<td></td>
 <td>Analyse your own data</td>
 </tr>
 <tr class="even">
 <td></td>
 <td style="text-align: right;">23 Oct</td>
-<td>Assignment 5: presentations (no lecture)</td>
+<td>Assignment 5: presentations <br>(no lecture)</td>
 <td>Submit Assignment 6a</td>
-<td>-</td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>44</td>
-<td style="text-align: right;">-</td>
-<td>-</td>
+<td style="text-align: right;"></td>
+<td></td>
 <td>Submit Assignment 6b</td>
-<td>-</td>
+<td></td>
 </tr>
 <tr class="even">
 <td>45</td>
 <td style="text-align: right;">9 Nov</td>
-<td>-</td>
+<td></td>
 <td>Submit Final Paper</td>
-<td>-</td>
+<td></td>
 </tr>
 </tbody>
 </table>
 <p>(*) Lab M226 is blocked for you from Monday 30.9. to Monday 14.10 of October, all day.</p>
-<table class="caption-top table">
-<caption>Due dates for assignments</caption>
+<style>
+  .assignment_table {
+    width: 100%;
+    table-layout: fixed;
+  }
+  .assignment_table th:nth-child(1) { width: 10%; }
+  .assignment_table th:nth-child(2) { width: 45%; }
+  .assignment_table th:nth-child(3) { width: 45%; }
+  .assignment_table.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+</style>
+<table class="assignment_table table-striped caption-top table">
+<caption>Due dates for assignments </caption>
 <colgroup>
-<col style="width: 22%">
-<col style="width: 43%">
+<col style="width: 23%">
+<col style="width: 42%">
 <col style="width: 34%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Due date</th>
+<th style="text-align: right;">Due date</th>
 <th>Task</th>
 <th>Grading</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>11 Sep - 09:00</td>
+<td style="text-align: right;">11 Sep - 09:00</td>
 <td><em>Assignment 0:</em> Submit (written) experimental proposal</td>
 <td>No grade; individual submission is required</td>
 </tr>
 <tr class="even">
-<td>23 Sep - 09:00</td>
+<td style="text-align: right;">23 Sep - 09:00</td>
 <td><em>Assignment 1:</em> Upload experiment</td>
 <td>Graded as group assignment</td>
 </tr>
 <tr class="odd">
-<td>11 Oct - 09:00</td>
+<td style="text-align: right;">11 Oct - 09:00</td>
 <td><em>Assignment 3:</em> Preprocessing assignment</td>
 <td>Graded as individual assignment</td>
 </tr>
 <tr class="even">
-<td>14 Oct - 09:00</td>
+<td style="text-align: right;">14 Oct - 09:00</td>
 <td><em>Assignment 4:</em> Analyses assignment</td>
 <td>Graded as individual assignment</td>
 </tr>
 <tr class="odd">
-<td>25 Oct</td>
+<td style="text-align: right;">25 Oct</td>
 <td><em>Assignment 5:</em> Presentation</td>
 <td>Graded as group assignment</td>
 </tr>
 <tr class="even">
-<td></td>
+<td style="text-align: right;"></td>
 <td><em>Assignment 6:</em> Peer review</td>
 <td>No grade; submission is required</td>
 </tr>
 <tr class="odd">
-<td>29 Oct, 18:00</td>
+<td style="text-align: right;">29 Oct, 18:00</td>
 <td>Send out draft for peer review</td>
 <td></td>
 </tr>
 <tr class="even">
-<td>1 Nov, 18:00</td>
+<td style="text-align: right;">1 Nov, 18:00</td>
 <td>Return peer review by Oct</td>
 <td></td>
 </tr>
 <tr class="odd">
-<td>11 Nov</td>
+<td style="text-align: right;">11 Nov</td>
 <td>Final Paper</td>
 <td>Graded as individual assignment</td>
 </tr>
