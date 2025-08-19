@@ -21,7 +21,7 @@ new p5((p) => {
   let dt = 0.02;
 
   p.setup = () => {
-    let canvas = p.createCanvas(400, 400);
+    let canvas = p.createCanvas(400, 800);
     canvas.parent("wolfram-sketch");
     for (let i = 0; i < n; i++) {
       x[i] = i + 1;
@@ -34,6 +34,7 @@ new p5((p) => {
 
   p.draw = () => {
     p.background(255);
+
     for (let i = 0; i < n; i++) {
       let k = (4 + 3 * p.sin(2 * y[i] - t)) * p.cos(x[i] / 29.0);
       let e = y[i] / 8.0 - 13.0;
@@ -46,8 +47,8 @@ new p5((p) => {
 
       let px = q + 30 * p.cos(c) + 200;
       let py = 400 - (q * p.sin(c) + 39 * d - 220);
-
-      p.point(px, py);
+      p.stroke(i/40, i/160, 200-i/80, 165);
+      p.point(px,py);
     }
     t += dt;
     if (t > p.TWO_PI) t = 0;
