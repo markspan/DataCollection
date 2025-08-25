@@ -141,7 +141,7 @@ new p5((p) => {
   let y = [];
 
   let t = 0;
-  let dt = 0.02;
+  let dt = 0.05;
 
   p.setup = () => {
     let canvas = p.createCanvas(400, 800);
@@ -170,7 +170,7 @@ new p5((p) => {
 
       let px = q + 30 * p.cos(c) + 200;
       let py = 400 - (q * p.sin(c) + 39 * d - 220);
-      p.stroke(i/40, i/60, 200-i/80, 165);
+      p.stroke(i/40, i/160, 200-i/80, 165);
       p.point(px,py);
     }
     t += dt;

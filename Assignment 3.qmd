@@ -1,0 +1,32 @@
+---
+title: "Assignment 3: Data Collection and Analysis for the Cognitive Neurosciences *(PSMCV-2)*"
+author:
+  - name: Olaf Dimigen
+    affiliations:
+      - id: id1
+        name: Department of Experimental Psychology
+
+  - name: Mark M. Span
+    affiliations:
+        name: ACN Applied Cognitive Neuroscience Master
+        
+  - name: Robbert van der Mijn
+    affiliations:
+        name: TNO
+  
+---
+# Data Collection and Analysis
+
+# Assignment 3: Preprocessing
+
+This assignment will take you through some of the required steps for preprocessing your own data later on.
+
+Here, we'll use the data we collected during the demonstration experiment (hint: open up the experiment once more to check out the durations of all the phases)
+
+You'll to this assignment individually on you own computer (or one of the university computers).
+
+You are likely to run into many errors. THIS IS NORMAL. A big part of scientific computing is solving problems. Sometimes, when you enter one of your error messages into google, you will not get a solution to your problem. Ask us for help early! Asking the correct question is hard!
+
+You can sequentially run the chunks of code in this script and they will gradually take you through the preprocessing of our demo data. Sometimes you are asked to fill in some code (it will be marked with #TODO) and sometimes you are asked to interpret output using text.
+
+Some of these modules are not installed by default with Python in your computer, install them first. This syntax will (try to) do so if needed. There is no need for you to understand how this works (yet..).

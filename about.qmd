@@ -18,7 +18,7 @@ new p5((p) => {
   let y = [];
 
   let t = 0;
-  let dt = 0.02;
+  let dt = 0.05;
 
   p.setup = () => {
     let canvas = p.createCanvas(400, 800);
